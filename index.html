@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Archit Chawla | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad67.js" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -56,12 +57,31 @@
       color: #2980b9;
     }
     .project p {
-      margin-bottom: 0;
+      margin-bottom: 0.5em;
     }
     .project a {
       text-decoration: none;
       color: #2980b9;
       font-weight: 600;
+    }
+
+    /* Skill Badges */
+    .skills {
+      margin-top: 0.8em;
+    }
+    .badge {
+      display: inline-block;
+      background: #ecf0f1;
+      color: #2c3e50;
+      padding: 0.3em 0.6em;
+      margin: 0.2em;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+    .badge i {
+      margin-right: 0.3em;
+      color: #2980b9;
     }
 
     /* Footer */
@@ -91,23 +111,51 @@
   <div class="container">
 
     <div class="project">
-      <h2><a href="https://www.canva.com/design/DAGSulkV5pQ/view" target="_blank">AI for Customer Engagement – Strategic Pitch</a></h2>
+      <h2><a href="https://www.canva.com/design/DAGSulkV5pQ/view" target="_blank">
+        <i class="fas fa-robot"></i> AI for Customer Engagement – Strategic Pitch
+      </a></h2>
       <p>A business-focused presentation outlining a data and AI strategy for transforming customer engagement, with visuals and use-case planning.</p>
+      <div class="skills">
+        <span class="badge"><i class="fas fa-brain"></i> AI Strategy</span>
+        <span class="badge"><i class="fas fa-chart-line"></i> Data Analytics</span>
+        <span class="badge"><i class="fas fa-presentation"></i> Storytelling</span>
+      </div>
     </div>
 
     <div class="project">
-      <h2><a href="https://www.canva.com/design/DAGVVxeVw_g/view" target="_blank">Visualizing Data for Decision-Makers</a></h2>
+      <h2><a href="https://www.canva.com/design/DAGVVxeVw_g/view" target="_blank">
+        <i class="fas fa-chart-pie"></i> Visualizing Data for Decision-Makers
+      </a></h2>
       <p>A storytelling deck designed to communicate data insights clearly and effectively to stakeholders using clean visuals.</p>
+      <div class="skills">
+        <span class="badge"><i class="fas fa-chart-bar"></i> Data Visualization</span>
+        <span class="badge"><i class="fas fa-bullhorn"></i> Communication</span>
+        <span class="badge"><i class="fas fa-chalkboard-teacher"></i> Stakeholder Engagement</span>
+      </div>
     </div>
 
     <div class="project">
-      <h2><a href="https://drive.google.com/file/d/1SPXhofTf7w-4jQZ-0BGAlSFxPHvVvK3-/view" target="_blank">Echo Insight – AI Customer Service Framework</a></h2>
+      <h2><a href="https://drive.google.com/file/d/1SPXhofTf7w-4jQZ-0BGAlSFxPHvVvK3-/view" target="_blank">
+        <i class="fas fa-headset"></i> Echo Insight – AI Customer Service Framework
+      </a></h2>
       <p>A complete AI-driven solution using RoBERTa and Flan-T5 for evaluating customer service conversations. Includes model development, AWS deployment, and business analytics dashboards.</p>
+      <div class="skills">
+        <span class="badge"><i class="fas fa-robot"></i> NLP</span>
+        <span class="badge"><i class="fab fa-aws"></i> AWS</span>
+        <span class="badge"><i class="fas fa-database"></i> Data Engineering</span>
+      </div>
     </div>
 
     <div class="project">
-      <h2><a href="https://github.com/ArchitChawla415/nflpa-survey-analysis" target="_blank">NFLPA Survey Analysis – Fan Insights with NLP & EDA</a></h2>
+      <h2><a href="https://github.com/ArchitChawla415/nflpa-survey-analysis" target="_blank">
+        <i class="fas fa-football-ball"></i> NFLPA Survey Analysis – Fan Insights with NLP & EDA
+      </a></h2>
       <p>An end-to-end analysis of NFLPA survey responses using Python for data cleaning, exploratory analysis, and lightweight NLP to uncover fan themes and presentable insights.</p>
+      <div class="skills">
+        <span class="badge"><i class="fab fa-python"></i> Python</span>
+        <span class="badge"><i class="fas fa-search"></i> EDA</span>
+        <span class="badge"><i class="fas fa-comments"></i> NLP</span>
+      </div>
     </div>
 
   </div>
