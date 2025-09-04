@@ -3,33 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <title>Archit Chawla | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; line-height: 1.6; background: #fdfdfd; }
-    h1, h2 { color: #2c3e50; }
-    .project { background: #fff; border: 1px solid #ddd; padding: 1em; margin-bottom: 1.5em; border-radius: 8px; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { margin-top: 4em; font-size: 0.9em; color: #555; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(135deg, #2980b9, #6dd5fa);
+      color: white;
+      text-align: center;
+      padding: 3em 1em;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+    }
+
+    /* Project Cards */
+    .project {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .project h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #2980b9;
+    }
+    .project p {
+      margin-bottom: 0;
+    }
+    .project a {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 3em;
+      padding-bottom: 2em;
+    }
+    footer a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Archit Chawla – Portfolio</h1>
-  <p>I design AI-powered solutions and tell clear stories with data. Here are a few selected projects demonstrating my work across analytics, machine learning, and presentation design.</p>
+  <header>
+    <h1>Archit Chawla</h1>
+    <p>Designing AI-powered solutions & telling stories with data</p>
+  </header>
 
-  <div class="project">
-    <h2><a href="https://www.canva.com/design/DAGSulkV5pQ/view?utm_content=DAGSulkV5pQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">AI for Customer Engagement – Strategic Pitch</a></h2>
-    <p>A business-focused presentation outlining a data and AI strategy for transforming customer engagement, with visuals and use-case planning.</p>
-  </div>
+  <div class="container">
 
-  <div class="project">
-    <h2><a href="https://www.canva.com/design/DAGVVxeVw_g/view?utm_content=DAGVVxeVw_g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Visualizing Data for Decision-Makers</a></h2>
-    <p>A storytelling deck designed to communicate data insights clearly and effectively to stakeholders using clean visuals.</p>
-  </div>
+    <div class="project">
+      <h2><a href="https://www.canva.com/design/DAGSulkV5pQ/view" target="_blank">AI for Customer Engagement – Strategic Pitch</a></h2>
+      <p>A business-focused presentation outlining a data and AI strategy for transforming customer engagement, with visuals and use-case planning.</p>
+    </div>
 
-  <div class="project">
-    <h2><a href="https://drive.google.com/file/d/1SPXhofTf7w-4jQZ-0BGAlSFxPHvVvK3-/view?usp=sharing" target="_blank">Echo Insight – AI Customer Service Framework</a></h2>
-    <p>A complete AI-driven solution using RoBERTa and Flan-T5 for evaluating customer service conversations. Includes model development, AWS deployment, and business analytics dashboards.</p>
+    <div class="project">
+      <h2><a href="https://www.canva.com/design/DAGVVxeVw_g/view" target="_blank">Visualizing Data for Decision-Makers</a></h2>
+      <p>A storytelling deck designed to communicate data insights clearly and effectively to stakeholders using clean visuals.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://drive.google.com/file/d/1SPXhofTf7w-4jQZ-0BGAlSFxPHvVvK3-/view" target="_blank">Echo Insight – AI Customer Service Framework</a></h2>
+      <p>A complete AI-driven solution using RoBERTa and Flan-T5 for evaluating customer service conversations. Includes model development, AWS deployment, and business analytics dashboards.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/ArchitChawla415/nflpa-survey-analysis" target="_blank">NFLPA Survey Analysis – Fan Insights with NLP & EDA</a></h2>
+      <p>An end-to-end analysis of NFLPA survey responses using Python for data cleaning, exploratory analysis, and lightweight NLP to uncover fan themes and presentable insights.</p>
+    </div>
+
   </div>
 
   <footer>
