@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Force rebuild for GitHub Pages -->
+  <!-- Force rebuild for GitHub Pages -->
   <meta charset="UTF-8">
   <title>Archit Chawla | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -19,15 +19,38 @@
     header {
       background: linear-gradient(135deg, #2980b9, #6dd5fa);
       color: white;
-      text-align: center;
       padding: 3em 1em;
     }
-    header h1 {
+
+    /* Hero Layout with Portrait */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      text-align: left;
+    }
+
+    .portrait {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 3px solid white;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
       font-size: 2.5em;
       margin: 0;
       font-weight: 800;
     }
-    header p {
+
+    .hero-text p {
       font-size: 1.2em;
       margin-top: 0.5em;
     }
@@ -48,18 +71,22 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .project:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
+
     .project h2 {
       margin-top: 0;
       font-size: 1.5em;
       color: #2980b9;
     }
+
     .project p {
       margin-bottom: 0.5em;
     }
+
     .project a {
       text-decoration: none;
       color: #2980b9;
@@ -70,6 +97,7 @@
     .skills {
       margin-top: 0.8em;
     }
+
     .badge {
       display: inline-block;
       background: #ecf0f1;
@@ -80,6 +108,7 @@
       font-size: 0.85em;
       font-weight: 600;
     }
+
     .badge i {
       margin-right: 0.3em;
       color: #2980b9;
@@ -93,10 +122,12 @@
       margin-top: 3em;
       padding-bottom: 2em;
     }
+
     footer a {
       color: #2980b9;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
@@ -105,8 +136,13 @@
 <body>
 
   <header>
-    <h1>Archit Chawla</h1>
-    <p>Designing AI-powered solutions & telling stories with data</p>
+    <div class="hero">
+      <img src="Portrait.jpg" alt="Archit Chawla" class="portrait">
+      <div class="hero-text">
+        <h1>Archit Chawla</h1>
+        <p>Designing AI-powered solutions & telling stories with data</p>
+      </div>
+    </div>
   </header>
 
   <div class="container">
